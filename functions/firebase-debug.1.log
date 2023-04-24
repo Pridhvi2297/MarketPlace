@@ -1,0 +1,98 @@
+[debug] [2023-04-24T11:53:08.933Z] ----------------------------------------------------------------------
+[debug] [2023-04-24T11:53:08.934Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2023-04-24T11:53:08.935Z] CLI Version:   11.28.0
+[debug] [2023-04-24T11:53:08.935Z] Platform:      darwin
+[debug] [2023-04-24T11:53:08.935Z] Node Version:  v18.15.0
+[debug] [2023-04-24T11:53:08.936Z] Time:          Mon Apr 24 2023 07:53:08 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-04-24T11:53:08.936Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-24T11:53:09.022Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-24T11:53:09.022Z] > authorizing via signed-in user (mpnc2296@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-04-24T11:53:09.394Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] ⚠  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[warn] ⚠  hosting: Hosting Emulator unable to start on port 5000, starting on 5002 instead. {"metadata":{"emulator":{"name":"hosting"},"message":"Hosting Emulator unable to start on port 5000, starting on 5002 instead."}}
+[debug] [2023-04-24T11:53:09.394Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-24T11:53:09.395Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] ⚠  emulators: It seems that you are running multiple instances of the emulator suite for project marketplace-pnc. This may result in unexpected behavior. 
+[debug] [2023-04-24T11:53:09.401Z] [hub] writing locator at /var/folders/x4/0n5ln6g537n5h7w7pq002n4h0000gn/T/hub-marketplace-pnc.json
+[debug] [2023-04-24T11:53:09.548Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-24T11:53:09.548Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-24T11:53:09.548Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4001},{"address":"::1","family":"IPv6","port":4001}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-04-24T11:53:09.551Z] defaultcredentials: writing to file /Users/prudhvinathchowdary/.config/firebase/mpnc2296_gmail_com_application_default_credentials.json
+[debug] [2023-04-24T11:53:09.558Z] Setting GAC to /Users/prudhvinathchowdary/.config/firebase/mpnc2296_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/prudhvinathchowdary/.config/firebase/mpnc2296_gmail_com_application_default_credentials.json"}}
+[debug] [2023-04-24T11:53:09.559Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc/adminSdkConfig [none]
+[debug] [2023-04-24T11:53:09.802Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc/adminSdkConfig 200
+[debug] [2023-04-24T11:53:09.803Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc/adminSdkConfig {"projectId":"marketplace-pnc","storageBucket":"marketplace-pnc.appspot.com"}
+[debug] [2023-04-24T11:53:09.821Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/marketplace-pnc/sites 
+[debug] [2023-04-24T11:53:10.299Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/marketplace-pnc/sites 200
+[debug] [2023-04-24T11:53:10.299Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/marketplace-pnc/sites {"sites":[{"name":"projects/marketplace-pnc/sites/marketplace-pnc","defaultUrl":"https://marketplace-pnc.web.app","type":"DEFAULT_SITE"},{"name":"projects/marketplace-pnc/sites/marketplace-pnc2297","defaultUrl":"https://marketplace-pnc2297.web.app","appId":"1:14955583576:web:9a014daecc589c2f8b522d","type":"USER_SITE"}]}
+[debug] [2023-04-24T11:53:10.300Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc/webApps/-/config [none]
+[debug] [2023-04-24T11:53:10.811Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc/webApps/-/config 200
+[debug] [2023-04-24T11:53:10.812Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc/webApps/-/config {"projectId":"marketplace-pnc","appId":"1:14955583576:web:9a014daecc589c2f8b522d","storageBucket":"marketplace-pnc.appspot.com","apiKey":"AIzaSyDcq_6uG46b4nEiXGYdadeRV0iEm3ptR78","authDomain":"marketplace-pnc.firebaseapp.com","messagingSenderId":"14955583576","measurementId":"G-3D5DRTSC13"}
+[debug] [2023-04-24T11:53:10.821Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc [none]
+[debug] [2023-04-24T11:53:11.040Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc 200
+[debug] [2023-04-24T11:53:11.040Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc {"projectId":"marketplace-pnc","projectNumber":"14955583576","displayName":"marketplace","name":"projects/marketplace-pnc","resources":{"hostingSite":"marketplace-pnc"},"state":"ACTIVE","etag":"1_6b577f2c-d6d3-4a7e-8460-9501cf8e209c"}
+[info] i  hosting[marketplace-pnc]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting[marketplace-pnc]: Local server: http://127.0.0.1:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5002\u001b[22m\u001b[24m"}}
+[debug] [2023-04-24T11:53:11.109Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-04-24T11:53:11.109Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-04-24T11:53:11.109Z] Starting Emulator UI with command {"binary":"node","args":["/Users/prudhvinathchowdary/.cache/firebase/emulators/ui-v1.11.5/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/prudhvinathchowdary/.cache/firebase/emulators/ui-v1.11.5/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-04-24T11:53:11.112Z] Error: EACCES: permission denied, open 'ui-debug.log'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-04-24T11:53:11.199Z] Web / API server started at 127.0.0.1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4001\n"}}
+[debug] [2023-04-24T11:53:11.199Z] Web / API server started at ::1:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4001\n"}}
+[debug] [2023-04-24T11:55:32.449Z] ----------------------------------------------------------------------
+[debug] [2023-04-24T11:55:32.450Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2023-04-24T11:55:32.451Z] CLI Version:   11.28.0
+[debug] [2023-04-24T11:55:32.451Z] Platform:      darwin
+[debug] [2023-04-24T11:55:32.451Z] Node Version:  v18.15.0
+[debug] [2023-04-24T11:55:32.452Z] Time:          Mon Apr 24 2023 07:55:32 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-04-24T11:55:32.452Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-24T11:55:32.539Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-24T11:55:32.540Z] > authorizing via signed-in user (mpnc2296@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-04-24T11:55:32.952Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] ⚠  hosting: Hosting Emulator unable to start on port 5000, starting on 5002 instead. {"metadata":{"emulator":{"name":"hosting"},"message":"Hosting Emulator unable to start on port 5000, starting on 5002 instead."}}
+[debug] [2023-04-24T11:55:32.952Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] ⚠  ui: Emulator UI unable to start on port 4000, starting on 4002 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4002 instead."}}
+[debug] [2023-04-24T11:55:32.953Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4002},{"address":"::1","family":"IPv6","port":4002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[warn] ⚠  emulators: It seems that you are running multiple instances of the emulator suite for project marketplace-pnc. This may result in unexpected behavior. 
+[debug] [2023-04-24T11:55:32.959Z] [hub] writing locator at /var/folders/x4/0n5ln6g537n5h7w7pq002n4h0000gn/T/hub-marketplace-pnc.json
+[debug] [2023-04-24T11:55:33.106Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-24T11:55:33.106Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-24T11:55:33.106Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4002},{"address":"::1","family":"IPv6","port":4002}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-04-24T11:55:33.109Z] defaultcredentials: writing to file /Users/prudhvinathchowdary/.config/firebase/mpnc2296_gmail_com_application_default_credentials.json
+[debug] [2023-04-24T11:55:33.116Z] Setting GAC to /Users/prudhvinathchowdary/.config/firebase/mpnc2296_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/prudhvinathchowdary/.config/firebase/mpnc2296_gmail_com_application_default_credentials.json"}}
+[debug] [2023-04-24T11:55:33.117Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc/adminSdkConfig [none]
+[debug] [2023-04-24T11:55:33.567Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc/adminSdkConfig 200
+[debug] [2023-04-24T11:55:33.567Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc/adminSdkConfig {"projectId":"marketplace-pnc","storageBucket":"marketplace-pnc.appspot.com"}
+[debug] [2023-04-24T11:55:33.591Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/marketplace-pnc/sites 
+[debug] [2023-04-24T11:55:34.071Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/marketplace-pnc/sites 200
+[debug] [2023-04-24T11:55:34.072Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/marketplace-pnc/sites {"sites":[{"name":"projects/marketplace-pnc/sites/marketplace-pnc","defaultUrl":"https://marketplace-pnc.web.app","type":"DEFAULT_SITE"},{"name":"projects/marketplace-pnc/sites/marketplace-pnc2297","defaultUrl":"https://marketplace-pnc2297.web.app","appId":"1:14955583576:web:9a014daecc589c2f8b522d","type":"USER_SITE"}]}
+[debug] [2023-04-24T11:55:34.072Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc/webApps/-/config [none]
+[debug] [2023-04-24T11:55:34.481Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc/webApps/-/config 200
+[debug] [2023-04-24T11:55:34.482Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc/webApps/-/config {"projectId":"marketplace-pnc","appId":"1:14955583576:web:9a014daecc589c2f8b522d","storageBucket":"marketplace-pnc.appspot.com","apiKey":"AIzaSyDcq_6uG46b4nEiXGYdadeRV0iEm3ptR78","authDomain":"marketplace-pnc.firebaseapp.com","messagingSenderId":"14955583576","measurementId":"G-3D5DRTSC13"}
+[debug] [2023-04-24T11:55:34.490Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc [none]
+[debug] [2023-04-24T11:55:34.710Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc 200
+[debug] [2023-04-24T11:55:34.710Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/marketplace-pnc {"projectId":"marketplace-pnc","projectNumber":"14955583576","displayName":"marketplace","name":"projects/marketplace-pnc","resources":{"hostingSite":"marketplace-pnc"},"state":"ACTIVE","etag":"1_6b577f2c-d6d3-4a7e-8460-9501cf8e209c"}
+[info] i  hosting[marketplace-pnc]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting[marketplace-pnc]: Local server: http://127.0.0.1:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5002\u001b[22m\u001b[24m"}}
+[debug] [2023-04-24T11:55:34.768Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-04-24T11:55:34.769Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-04-24T11:55:34.769Z] Starting Emulator UI with command {"binary":"node","args":["/Users/prudhvinathchowdary/.cache/firebase/emulators/ui-v1.11.5/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/prudhvinathchowdary/.cache/firebase/emulators/ui-v1.11.5/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-04-24T11:55:34.772Z] Error: EACCES: permission denied, open 'ui-debug.log'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-04-24T11:55:34.859Z] Web / API server started at 127.0.0.1:4002
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4002\n"}}
+[debug] [2023-04-24T11:55:34.860Z] Web / API server started at ::1:4002
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4002\n"}}
